@@ -30,11 +30,11 @@
         <img id="nav-btn-img" src="./images/icon-hamburger.svg" alt="" />
       </button>
       
-      <nav id="nav-menu" class="[ b-hero__nav ]" data-state="collapsed">
+      <nav aria-label="main" id="nav-menu" class="[ b-hero__nav ]" data-state="collapsed">
         
         <ul class="[ c-flex-col c-justify-con-center c-gap-1 c-flex-row-mq ] [ u-font-josefin u-list-style-none u-font-alata-mq ] [ b-hero__nav-options ]">
           <li>
-            <a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#">About</a>
+            <a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#about">About</a>
           </li>
           <li>
             <a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#">Careers</a>
@@ -43,7 +43,7 @@
             <a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#">Events</a>
           </li>
           <li>
-            <a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#">Products</a>
+            <a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#products">Products</a>
           </li>
           <li>
             <a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#">Support</a>
@@ -53,23 +53,26 @@
       
     </header>
     
-    <div class="[ u-width-2 ] [ b-hero__title ]" role="presentation">
+    <div class="[ u-width-2 ] [ b-hero__title ]" role="region" aria-labelledby="header-title">
       <div class="[ u-border-1 ]" role="presentation">
         <h1 class="[ u-width-4 u-clr-white u-width-mq ]">Immersive experiences that deliver</h1>
       </div>
     </div>
     
-    <picture>
-      <source srcset="./images/desktop/image-hero.jpg" media="(min-width: 46.875rem)" />
-      <img class="[ u-width-1 ]" src="./images/mobile/image-hero.jpg" alt="" />
-    </picture>
+    <div class="[ b-hero__img ]" role="presentation">
+      <picture>
+        <source srcset="./images/desktop/image-hero.jpg" media="(min-width: 46.875rem)" />
+        <img class="[ u-width-1 u-vertical-align-sub ]" src="./images/mobile/image-hero.jpg" alt="" />
+      </picture>
+      <div class="b-hero__shadow" role="presentation"></div>
+    </div>
   </div>
 
   <div id="menu-bg" class="[ b-menu-bg ]" role="presentation" data-state="hidden"></div>
   
   <main class="[ c-flex-col c-align-itm-center ] [ u-pd-block-1 ]">
 
-    <article class="[ u-width-2 ] [ b-vr ]">
+    <article id="about" class="[ u-width-2 ] [ b-vr ]">
       
       <header class="[ b-vr__img-container ]">
         <picture>
@@ -85,7 +88,7 @@
       
     </article>
 
-    <article class="[ u-width-2 u-pd-block-st ]">
+    <article id="products" class="[ u-width-2 u-pd-block-st ]">
       
       <header class="[ c-flex-row c-justify-con-center c-align-itm-center c-justify-con-sb-mq ] [ u-mrg-block-end ]">
         <h2 class="[ u-fs-2 ]">Our creations</h2>
@@ -187,12 +190,12 @@
       
       <img class="[ c-grid-area-a ] [ u-width-3 ]" src="./images/logo.svg" alt="loopstudious"/>
         
-      <nav class="[ c-grid-area-b ] [ u-mrg-block-1 u-mrg-zero-mq ]">
+      <nav aria-label="footer" class="[ c-grid-area-b ] [ u-mrg-block-1 u-mrg-zero-mq ]">
         <ul class="[ c-flex-col c-align-itm-center c-gap-3 c-flex-row-mq c-gap-mq ] [ u-list-style-none ] [ b-list-options ]">
-          <li><a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#">About</a></li>
+          <li><a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#about">About</a></li>
           <li><a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#">Careers</a></li>
           <li><a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#">Events</a></li>
-          <li><a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#">Products</a></li>
+          <li><a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#products">Products</a></li>
           <li><a class="[ u-text-deco-none u-clr-white u-cursor-pointer u-pd-block-end-mq u-hover-bot-border u-hover-half-border-mq ]" tabindex="0" href="#">Support</a></li>
         </ul>
       </nav>

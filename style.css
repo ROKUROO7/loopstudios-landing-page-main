@@ -35,6 +35,10 @@
 
 /* GLOBAL */
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, 
 *::before, 
 *::after  {
@@ -138,7 +142,7 @@ h3 {
     display: grid;
     grid-template-areas: "a c"
                          "b d";
-    grid-auto-column: 1fr;
+    grid-auto-columns: 1fr;
     row-gap: var(--fs-5);
   }
 }
@@ -474,6 +478,25 @@ h3 {
 
 .b-vr__info h2 {
   margin-block-end: var(--fs-1);
+}
+
+.b-hero__img {
+  position: relative;
+  z-index: -1;
+}
+
+.b-hero__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  background-color: var(--Black);
+  opacity: 0;
+  
+  @media screen and (min-width: 46.875rem) {
+    opacity: 0.3;
+  }
 }
 
 .b-btn {
